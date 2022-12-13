@@ -10,12 +10,12 @@ public class ClassSubject {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "MODULE_ID")
     private long id;
-//    @Column(name = "CLASS_ID")
-//    private long classId;
-//    @Column(name = "LECTURER_ID")
-//    private long lecturerId;
-//    @Column(name = "YEAR")
-//    private String year;
-//    @Column(name = "MODULE_CODE")
-//    private long moduleCode;
+    @Column(name = "CLASS_ID")
+    private long classId;
+    @Column(name = "LECTURER_ID")
+    private long lecturerId;
+    @Column(name = "YEAR")
+    private String year;
+    @Column(name = "MODULE_CODE")
+    private long moduleCode;
 }

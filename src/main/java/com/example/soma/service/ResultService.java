@@ -38,16 +38,11 @@ public class ResultService {
         return response;
     }
 
-//    public Response publishResult(String semester, String year){
-//        //find by semester and year
-//        List<Result> results = new ArrayList<>();
-//        for (Result result:results) {
-//            result.setStatus("PUBLISHED");
-//            resultDao.save(result);
-//        }
-//        response.setResponseCode("0");
-//        response.setResponseStatus("Success");
-//        response.setResponseBody("Result Published");
-//        return  response;
-//    }
+    public Response getResults(String academicYear, String semester, String moduleCode, String studentRegNo){
+        ArrayList<Result> results = new ArrayList<>();
+
+
+        return response;
+    }
+
 }

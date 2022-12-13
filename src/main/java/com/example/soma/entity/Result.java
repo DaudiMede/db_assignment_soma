@@ -11,7 +11,7 @@ public class Result {
     @Column(name = "RESULT_ID")
     private long id;
     @Column(name = "STUDENT_REG_NO")
-    private long studentRegNo;
+    private String studentRegNo;
     @Column(name = "MODULE_CODE")
     private String moduleCode;
     @Column(name = "SEMESTER")

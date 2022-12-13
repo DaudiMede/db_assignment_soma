@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
+@Table(name = "Staff", uniqueConstraints = {
+        @UniqueConstraint(name = "uc_staff_email_phone_number", columnNames = {"EMAIL", "PHONE_NUMBER"})
+})
 @Data
 public class Staff {
     @Id
@@ -20,7 +23,7 @@ public class Staff {
     private String gender;
     @Column(name = "PHONE_NUMBER")
     private String phoneNumber;
-    @Column(name = "email")
+    @Column(name = "EMAIL")
     private String email;
     @Column(name = "DEPARTMENT_ID")
     private long departmentId;
