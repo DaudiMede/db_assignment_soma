@@ -38,7 +38,12 @@ const Modules = () => {
                     Add Module
                 </Button> : null}
                 <Box sx={{m:3}} />
-                <CustomTable rows={rows} columns={moduleColumns} pageSize={5} rowsPerPageOptions={5} />
+                <CustomTable 
+                    rows={rows} 
+                    columns={moduleColumns} 
+                    pageSize={5} 
+                    rowsPerPageOptions={5} 
+                />
                 {fullScreenDialog}
             </div>
         </CustomCard>

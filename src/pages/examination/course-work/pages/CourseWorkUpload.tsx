@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import CustomCard from '../../../../components/cards/CustomCard';
 import CustomTable from '../../../../components/table/CustomTable';
 import { caResultColumns } from '../../../../constants/table-colums';
-import { typeResult, typeStudent } from '../../../../constants/types';
+import { typeStudent } from '../../../../constants/types';
 import Student from '../../../../models/Student';
 
 let initialrows:typeStudent[] = [];

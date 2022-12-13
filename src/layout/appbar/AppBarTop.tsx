@@ -29,7 +29,7 @@ const TopBar = () => {
         component="div"
         sx={{ display: { xs: 'none', sm: 'block'}}}
       >
-        SOMA
+        {/* SOMA */}
       </Typography>
     <IconButton
         size="large"

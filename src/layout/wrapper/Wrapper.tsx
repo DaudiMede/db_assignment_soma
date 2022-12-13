@@ -22,6 +22,7 @@ import StaffPage from '../../pages/staff/pages/StaffPage';
 import ResultPage from '../../pages/examination/Result';
 import Applications from '../../pages/registration/pages/Applications';
 import Users from '../../pages/users/pages/Users';
+import BasicTable from '../../components/table/CustomTableWithCells';
 
 type wrapperProps = {
   isUserAuthenticated:boolean;
@@ -39,7 +40,7 @@ const Wrapper = (props:wrapperProps) => {
         { props.isUserAuthenticated ? <Toolbar /> : null }
        <Routes>
            <Route path="/" element={<SignIn />}/>
-           <Route path="/home" element={<StudentHome />}/>
+           <Route path="/home" element={<BasicTable />}/>
            <Route path="/departments" element={<Department />}/>
            <Route path="/courses" element={<Courses />}/>
            <Route path="/modules" element={<Modules />}/>

@@ -35,7 +35,9 @@ const Classes = () => {
     return(
         <CustomCard title="Classes">
             <div>
-                <Button variant="contained" onClick={ toggleDialogState }>Add Class</Button>
+                {localStorage.getItem("role0") === "ADMIN" ?
+                    <Button variant="contained" onClick={ toggleDialogState }>Add Class</Button>
+                    : null}
                 <Box sx={{m:3}} />
                 <CustomTable 
                     rows={rows}
