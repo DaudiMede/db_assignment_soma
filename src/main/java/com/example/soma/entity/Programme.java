@@ -3,11 +3,14 @@ package com.example.soma.entity;
 import jakarta.persistence.*;
 
 @Entity
-public class CourseCategory {
+public class Programme {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long courseCategoryId;
-    @OneToOne
+    private Long programmeId;
+    private String programmeName;
+    private String status;
+    private String startingYear;
+    @ManyToOne
     @JoinColumn(
             name = "COURSE_ID",
             referencedColumnName = "courseId"
@@ -15,8 +18,8 @@ public class CourseCategory {
     private Course course;
     @OneToOne
     @JoinColumn(
-            name = "CATEGORY_ID",
-            referencedColumnName = "categoryId"
+            name = "NATIONAL_AWARD_ID",
+            referencedColumnName = "awardId"
     )
-    private Category category;
+    private NationalAward nationalAward;
 }

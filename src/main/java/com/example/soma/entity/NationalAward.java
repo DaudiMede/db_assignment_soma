@@ -4,14 +4,13 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
 
 @Entity
-@Data
-public class Role {
+public class NationalAward {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long roleId;
-    private String roleName;
+    private Long awardId;
+    private String awardTitle;
+    private String awardLevel;
     private String status;
 }

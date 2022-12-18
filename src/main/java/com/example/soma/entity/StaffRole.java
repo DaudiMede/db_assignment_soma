@@ -3,16 +3,16 @@ package com.example.soma.entity;
 import jakarta.persistence.*;
 
 @Entity
-public class UserRole {
+public class StaffRole {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long userRoleId;
+    private Long staffRoleId;
     @ManyToOne
     @JoinColumn(
-            name = "USER_ID",
-            referencedColumnName = "userId"
+            name = "STAFF_ID",
+            referencedColumnName = "staffId"
     )
-    private User user;
+    private Staff staff;
     @ManyToOne
     @JoinColumn(
             name = "ROLE_ID",
